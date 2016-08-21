@@ -51,5 +51,9 @@ group :production do
   gem 'pg'
 end
 
+# for form
 gem 'simple_form'
+
+# for settings
+gem 'config'
 
