@@ -82,11 +82,10 @@ Rails.application.configure do
   config.action_mailer.delivery_method = :smtp
 # SMTP settings for gmail
   config.action_mailer.smtp_settings = {
-   :address              => "smtp.gmail.com",
+   :address              => "smtp.sendgrid.net",
    :port                 => 587,
-   :domain               => "success-group.herokuapp.com",
-   :user_name            => "ruby.dhanabal@gmail.com",
-   :password             => "dhanabal_ruby89",
+   :user_name            => "dhanabalt",
+   :password             => "dhanabal19",
    :authentication       => "plain",
    :enable_starttls_auto => true
   }
