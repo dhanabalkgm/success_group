@@ -1,4 +1,6 @@
 class Person < ActiveRecord::Base
+
+  validates :name, :phone, :email, presence: true	
 	
   FIELDS = {email_fields: ["name", "phone", "email", "description"]}
 
