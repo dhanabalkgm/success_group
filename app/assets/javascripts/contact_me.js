@@ -10,6 +10,7 @@ $(function() {
         submitSuccess: function($form, event) {
             event.preventDefault(); // prevent default submit behaviour
             // get values from FORM
+            $("#contact_me_submit").prop('disabled', true); // disabling submit to prevent further submit when ajax call in progress
             var name = $("input#name").val();
             var email = $("input#email").val();
             var phone = $("input#phone").val();
@@ -52,7 +53,9 @@ $(function() {
                     //clear all fields
                     //$('#contactForm').trigger("reset");
                 },
-            });
+            }).done(function(){         // removing disabled submit after ajax completion
+               $("#contact_me_submit").prop('disabled', false); 
+            })
         },
         filter: function() {
             return $(this).is(":visible");
