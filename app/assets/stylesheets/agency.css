@@ -747,3 +747,7 @@ body {
 .full-height{
   height: 100%;
 }
+.section-subheading{
+  color: #fed136;
+  font-family: "Kaushan Script", "Helvetica Neue", Helvetica, Arial, cursive;
+}
